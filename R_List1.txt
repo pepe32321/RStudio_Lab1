@@ -1,0 +1,103 @@
+#Zad1
+wektor1=rep(c(1,2,3), each=4, times=3)
+
+
+#Zad2
+wektor2=c(seq(from=1, to=10, by=0.25))
+
+
+#Zad3
+wektor3=c(seq(from=1, to=10, length.out=43))
+
+
+#Zad4
+wektor3[c(seq(from=1, to=length(wektor3), by=3))]
+
+
+#Zad5
+#Odejmowanie od każdej składowej wektora liczby 1
+
+
+#Zad6
+#Wynik odejmowania wektorów różnych długości
+#Odejmowanie od każdej składowej pierwszego wektora kolejno pierwszej lub drugiej składowej drugiego wektora
+
+
+#Zad7
+#a)
+matrix7a=matrix(c(1:6), nrow=3, ncol=2, byrow=TRUE)
+matrix7a
+
+#b)
+matrix7b=matrix(c(1:6), nrow=3, ncol=2)
+matrix7b
+
+#c)
+matrix7c=cbind(1:3,4:6)
+matrix7c
+
+#d)
+matrix7d=rbind(c(1,4),c(2,5),c(3,6))
+matrix7d
+
+
+#Zad8
+matrixA=matrix(1:36,nrow=6,ncol=6, byrow=TRUE)
+matrixA
+
+#a)
+matrixBa=matrixA[c(seq(from=2, to=6, by=2)),c(seq(from=5, to=1, by=-2))]
+matrixBa
+
+#b)
+matrixBb=matrixA[5:6,]
+matrixBb
+
+#c)
+matrixBc=matrixA[,3:4]
+matrixBc
+
+#d)
+matrixBd=matrixA[-c(2),-c(3)]
+matrixBd
+
+
+#Zad9
+matrixA[2:3,4:6]
+matrixA[2:3,4:6]<-c(1,2,3)
+matrixA
+#Wybrane elementy macierzy A zostają nadpisane kolumnowo kolejnymi wartościami wektora c
+
+
+#Zad10
+matrixA>10
+matrixA[matrixA]>10
+#Pierwsza komenda zwraca macierz będącą macierzą pierwotną, 
+#w której każdy element zostaje nadpisany przez wynik warunku logicznego
+#Druga komenda zwraca same wyniki testu logicznego dla każdego elementu macierzy wypisane w linii
+
+
+#Zad11
+#nr indeksu: 45692
+#liczba cyfr: 5
+tablica11=array(data=1:2160, dim=c(2,9,6,5,4))
+tablica11
+
+
+#Zad12
+tablica11[2,9,6,5,4]
+#Zwracany jest ostatni element struktury
+#Ponieważ elementy struktury są kolejnymi liczbami naturalnymi,
+#Wynik jest liczbą elementów takiej struktury czyli wynikiem mnożenia rozmiarów wymiarów
+#4*5*6*9*2=2160
+
+
+#Zad13
+wektor13=c(1:200)
+
+#a)
+wektor13[wektor13 > 20 & wektor13 <=144 ]
+
+
+
+
